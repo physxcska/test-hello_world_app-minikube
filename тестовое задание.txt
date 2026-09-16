@@ -1,0 +1,23 @@
+1. создание hello world - main.go
+2. проверка на локальном хосте
+go run main.go
+http://localhost:32777/
+3. создание dockerfile
+4. связка с логином на dockerhub
+docker login
+5. создание образа с тэгами v1 и latest
+docker build -t physxcska/go-hello-app:v1 -t physxcska/go-hello-app:latest .
+6. проверка работы из докера локально
+docker run -p 32777:32777 -d physxcska/go-hello-app:v1
+6. выгрузка образов на dockerhub
+docker push physxcska/go-hello-app:v1
+docker push physxcska/go-hello-app:latest
+7. установка minikube
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+
+D:\Документы\DevOps\Вакансии\biocad\test-minikube
+
+$oldPath = [Environment]::GetEnvironmentVariable('Path', [EnvironmentVariableTarget]::Machine)
+if ($oldPath.Split(';') -inotcontains 'D:\Документы\DevOps\Вакансии\biocad\test-minikube'){
+  [Environment]::SetEnvironmentVariable('Path', $('{0};C:\minikube' -f $oldPath), [EnvironmentVariableTarget]::Machine)
+}
