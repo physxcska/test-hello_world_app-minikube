@@ -2,10 +2,6 @@
 
 Тестовое задание по развертыванию веб-приложения "hello" в Minikube.
 
-![веб-приложение localhost](./screenshots/hello-app_localhost.png)
-![веб-приложение local_network](./screenshots/hello-app_lan.jpg)
-
-
 ## Компоненты
 - **Docker Image:** `physxcska/go-hello-app:latest`
 - **Dockerhub:** `https://hub.docker.com/r/physxcska/go-hello-app`
@@ -13,19 +9,22 @@
 - **Используемые образы в dockerfile:** `golang:1.27.1-alpine3.24` и `alpine:3.24`
 - **Port:** `32777`
 
-
 ## Схема архитектуры
 ![Архитектура](./схема.drawio.png)
 
 ## Запуск в Minikube
 ```bash
-git clone [https://github.com/physxcska/test-hello_world_app-minikube.git](https://github.com/physxcska/test-hello_world_app-minikube.git)
+git clone https://github.com/physxcska/test-hello_world_app-minikube.git
 cd test-hello_world_app-minikube
 kubectl apply -f minikube.yml
 ```
+## Веб-приложение
+![веб-приложение localhost](./screenshots/hello-app_localhost.png)
+![веб-приложение local_network](./screenshots/hello-app_lan.jpg)
 
+## Порядок разработки
 <details>
-<summary>Порядок разработки</summary>
+<summary>Спойлер</summary>
 
 1. создание веб-приложения "hello world" app на go.
 см. файл main.go
