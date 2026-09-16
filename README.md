@@ -99,8 +99,9 @@ kubectl port-forward --address 0.0.0.0 svc/hello-service 32777:32777
 ```
 проверка в браузере  
 http://127.0.0.1:32777/ (для работы только на localhost)  
-http://host_ip:32777/ (для работы веб-приложения в локальной сети)  
 ![port-forward](./screenshots/port-forward.png)  
+http://host_ip:32777/ (для работы веб-приложения в локальной сети)  
+![веб-приложение local_network](./screenshots/hello-app_lan.jpg)  
   
 **12.** создание архитектурной схемы (draw.io) и подготовка README.md  
 см. раздел "Схема архитектуры"  
